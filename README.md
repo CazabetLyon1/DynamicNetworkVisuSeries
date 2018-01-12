@@ -1,3 +1,6 @@
+NOTE : à causes de limitations de GitHub, certaines librairies utilisées ainsi que les données transformées ne sont pas disonibles sur GiHub. Vous pouvez me contacter (Remy Cazabet), pour obtenir les données manquantes
+
+
 # Composition du groupe
 
 - **JASSIGNEUX Marie**	(*N° étudiant* : 11408106)
