@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+	<title> Analyse de Série </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="screenfull.js-gh-pages/dist/screenfull.js"></script>
+	<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+	<script src="jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="node_modules/bootstrap-slider/dist/bootstrap-slider.js"></script>
+		<link rel="stylesheet" href="node_modules/bootstrap-slider/dist/css/bootstrap-slider.css">
+	<script src="https://use.fontawesome.com/1cb0aaed60.js"></script>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="JSNetworkX-master/jsnetworkx.js"></script>
+	<script src="inc/fonctions.js"></script>
+	<script src="inc/Networkx.js"></script>
+</head>
+
+<!-- C'est la même barre de navigation sauf que cette fois elle ne défile pas, elle est fixé en haut de la page -->
+<div style="background-color: #2d2d30;">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">RC3</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html#intro"> Pourquoi? </a></li>
+					<li><a href="GoT.html"> Games of Thrones </a></li>
+					<li><a href="BB_.html"> Breaking Bad </a></li>
+					<li><a href="HoC.html"> House of Cards </a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<!-- Entete -->
+<img src="img/testHoC.png" alt="HoC" id="HoC" style="width: 100%">
+
+<!-- Bloc pour aider l'utilisateur : comment utiliser le graphe et des résumés de chaque saison pour qu'il puisse s'en rappeler -->
+<ul class="nav nav-tabs nav-justified">
+	<li style="background: gray;" class="active" id="b0"><a data-toggle="tab" href="#bloc0" style="color: black;">Accueil</a></li>
+	<li style="background: gray;" id="b1"><a data-toggle="tab" href="#bloc1" onclick="test2(1, 'HoC')" id="1" style="color: black;">Saison 1</a></li>
+	<li style="background: gray;" id="b2"><a data-toggle="tab" href="#bloc2" onclick="test2(2, 'HoC')" id="2" style="color: black;">Saison 2</a></li>
+</ul>
+
+<!-- Explication du graphe et résumé -->
+<div class="tab-content">
+	<div id="bloc0" class="tab-pane fade in active text-center" style="background: black;">
+		<br>
+		<h3 style="color: #fff;"><br> Pour bien utiliser le graphe : </h3>
+			<p style="font-style: italic; color: #fff;"> Le graphe montre l'évolution des personnages et leur relation au cours de chaque épisode de la série.<br>
+			Appuyer sur play, pour démarrer et appuyer de nouveau pour faire pause.<br>
+			A tout moment, vous pouvez revenir au début et accélerer légérement l'évolution du graphe.<br>
+			Vous pouvez zoomer, dézoomer, agrandir en plein écran, déplacer les points en les attrapants avec la souris et déplacer le graphe tout entier en cliquant dans une zone vide.<br>
+			Vous pouvez dès à présent cliquer sur l'onglet de la saison qui vous interresse pour visualiser son graphe. <br>
+			Amusez vous bien tout en savourant le générique de votre série préféré ! </p>
+		<br>
+	</div>
+
+ 	<div id="bloc1" class="tab-pane fade" style="background: black;">
+		<br>
+		<div class="container text-center">
+			<br>
+			<h3 style="color: #fff;">Analyse de la saison 1<br><em> Petit résumé pour ceux qui ont oublier ce qu'il s'est passé dans cette saison : </em></h3>
+			<p style="color: #fff;"> La série commence dans les rues de Washington. Le représentant Francis Underwood tue un chien blessé par une voiture en l'étranglant, puis s'adresse au spectateur en affirmant qu'il faut parfois faire des choses déplaisantes, mais nécessaires. L'action se concentre sur ce congressiste démocrate de Caroline du Sud, puissant et ivre de pouvoir. Après avoir soutenu le candidat Garrett Walker et permis son élection à la présidence des États-Unis contre la promesse d'être nommé secrétaire d'État, Underwood est trahi et n'accède pas à ce poste : le président le juge utile dans sa fonction de whip de la majorité démocrate. Profondément déçu, il se comporte en parfait lieutenant du président et l'assiste fidèlement dans sa tâche, mais élabore dans le même temps une stratégie pour l'évincer du pouvoir.<em> - Résumé Wikipedia </em>
+				<br>
+				<br>
+			 </p>
+			<br>
+		</div>
+	</div>
+
+	<div id="bloc2" class="tab-pane fade" style="background: black;">
+		<br>
+		<div class="container text-center">
+			<h3 style="color: #fff;">Analyse de la saison 2<br><em> Petit résumé pour ceux qui ont oublier ce qu'il s'est passé dans cette saison : </em></h3>
+			<p style="color: #fff;">Alors que Frank Underwood est sur le point de prendre ses fonctions, Zoe Barnes et deux de ses collègues, Lucas Goodwin et Janine Skorsky, poursuivent leurs investigations et parviennent à localiser Rachel Posner. L'homme de main de Frank, Douglas Stamper, force Rachel à habiter dans un endroit isolé. Underwood donne rendez-vous à Zoe Barnes dans le métro de Washington et la pousse sous une rame, sans être vu. Janine abandonne ses recherches et s'installe à Ithaca (New York) afin d'éviter d'être tuée elle aussi. La mort de Zoe encourage Lucas à continuer seul. Il sollicite l'aide d'un hacker, Gavin Orsay, pour retrouver l'historique des conversations entre Frank et Zoe, sans savoir que Gavin travaille pour Doug et a pour mission de piéger Lucas. Ce dernier est arrêté par le FBI et est accusé de cyber-terrorisme. Plus tard dans la saison, le hacker exerce un chantage sur Doug en évoquant Rachel Posner. Craignant de devoir déménager à nouveau et menacée par Doug, elle le frappe violemment à la tête avec une pierre, le laissant inanimé dans la forêt. Elle s'enfuit au volant de sa voiture.<em> - Résumé Wikipedia </em>
+
+			</p>
+			<br><br>
+		</div>
+	</div>
+
+</div>
+
+<!-- Bloc contenant les boutons utile pour le graphe ainsi que la barre de temps lié au graphe -->
+<div style="background: black;">
+	<div class="container">
+		<div class="player text-center">
+			<button type="button" id="button_fbw" class="btn" onclick='buttonRewindPress()'>
+				<span class="glyphicon glyphicon-fast-backward"></span>
+			</button>
+
+			<button type="button" id="button_play" class="btn" value="0" onclick='buttonPlayPress()'>
+				<span class="glyphicon glyphicon-play"></span>
+			</button>
+
+			<button type="button" id="button_fw" class="btn" onclick='buttonForwardPress()'>
+				<span class="glyphicon glyphicon-forward"></span>
+			</button>
+
+			<button id="button" type="button" class="btn btn-primary" onclick="pleinEcran()">
+				<span class="glyphicon glyphicon-fullscreen"></span>
+			</button>
+			
+			<div class="btn-group">
+				<button type="button" id="button_display_centralite" class="btn btn-default active" onclick='changeModeAffichage(mode_affichage.centralite, "button_display_centralite")'>
+					Centralité
+				</button>
+
+				<button type="button" id="button_display_anciennete" class="btn btn-default" onclick='changeModeAffichage(mode_affichage.anciennete, "button_display_anciennete")'>
+					Ancienneté
+				</button>
+			</div>
+
+			<div class="text-center">
+				<input id="ex1" data-provide="slider" data-slider-id='ex1Slider' style="width: 600px" type="text" data-slider-min="0" data-slider-max="889" data-slider-step="1" data-slider-value="0" onchange="update()"/>
+			</div>
+
+			<div id="canvas" class="sidenav" style="background-color: #ffffff" >
+				<text id="text" style="font-weight: bold;"></text>
+				<svg class="jsnx" > </svg>
+			</div>
+			<script src="inc/draw_options.js"></script>
+			<script>
+				// Création d'un graphe puis lancement de celui ci
+				dessiner('HoC');
+			</script>
+		</div>
+	</div>
+	<br> <br>
+	<!-- Attention ! La musique se déclenche toute seule des qu'on clique sur le bouton play du graphe -->
+	<div class="text-center">
+		<audio id="musique" controls loop>
+			<source src="musique/HOC.mp3">
+		</audio>
+	</div>
+</div>
+
+<!-- Footer, c'est le meme que dans la page d'accueil -->
+<footer class="nb-footer">
+	<br>
+	<div class="text-center">
+		<a class="up-arrow" href="#" data-toggle="tooltip" title="Haut de page">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+	</div>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="about">
+					<div class="social-media">
+						<ul class="list-inline">
+							<li><a href="https://www.facebook.com/reseauxsociauxecologieethologie/?hc_ref=ARTHhIsjGITSBzf7tXCXAiSl9XokEhnj9P1n6tjXPQRm9qxafBQHC6nFQR46svJxlVA&fref=nf"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/FirstLink_bdx"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://plus.google.com/communities/117088638594032790105"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="footer-info-single">
+					<h2 class="title"> Gestion des Données </h2>
+					<ul class="list-unstyled">
+						<li><a href="https://nodejs.org/en/" title=""><i class="fa fa-angle-double-right"></i> Node.js </a></li>
+						<li><a href="https://github.com/anderspitman/graphml-js" title=""><i class="fa fa-angle-double-right"></i> Graphml.js </a></li>
+						<li><a href="https://developer.mozilla.org/fr/?utm_source=mozilla&utm_medium=firefox-tile&utm_campaign=default" title=""><i class="fa fa-angle-double-right"></i> Mozilla Developer </a></li>
+						<li><a href="https://jquery.com/" title=""><i class="fa fa-angle-double-right"></i> JQuery - Utilisé par tous</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="footer-info-single">
+					<h2 class="title"> Gestion du Graphe </h2>
+					<ul class="list-unstyled">
+						<li><a href="http://jsnetworkx.org/index.html" title=""><i class="fa fa-angle-double-right"></i> JsNetworkX </a></li>
+						<li><a href="https://github.com/fkling/JSNetworkX/wiki/Drawing-graphs" title=""><i class="fa fa-angle-double-right"></i> Autre lien JsNetworkX</a></li>
+						<li><a href="https://bl.ocks.org/mbostock/929623" title=""><i class="fa fa-angle-double-right"></i>Bl.ocks </a></li>
+						<li><a href="https://d3js.org/" title=""><i class="fa fa-angle-double-right"></i> d3.js </a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="footer-info-single">
+					<h2 class="title"> Gestion du Site </h2>
+					<ul class="list-unstyled">
+						<li><a href="https://getbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> BootStrap v3</a></li>
+						<li><a href="https://github.com/seiyria/bootstrap-slider" title=""><i class="fa fa-angle-double-right"></i> BootStrap-Slider </a></li>
+						<li><a href="https://github.com/sindresorhus/screenfull.js/" title=""><i class="fa fa-angle-double-right"></i> Screenfull.js </a></li>
+						<li><a href="http://fontawesome.io/" title=""><i class="fa fa-angle-double-right"></i> FontAwesome </a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="footer-info-single">
+					<h2 class="title">A propos de nous</h2>
+					<p> 3 étudiants - 3e année de Licence Informatique - l'Université Lyon 1 </p>
+					<p> Andriamaro Randy <br> Granjon Julien <br> Jassigneux Marie </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="text-center">
+					<p>Copyright © 2017 - LifProjet - RC3</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<head>
+	<title> Analyse de Série </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="screenfull.js-gh-pages/dist/screenfull.js"></script>
+	<link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.min.css">
+	<script src="jquery-ui-1.12.1/external/jquery/jquery.js"></script>
+	<script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="node_modules/bootstrap-slider/dist/bootstrap-slider.js"></script>
+	<link rel="stylesheet" href="node_modules/bootstrap-slider/dist/css/bootstrap-slider.css">
+	<script src="https://use.fontawesome.com/1cb0aaed60.js"></script>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="JSNetworkX-master/jsnetworkx.js"></script>
+	<script src="inc/fonctions.js"></script>
+	<script src="inc/Networkx.js"></script>
+</head>
+
+<!-- C'est la même barre de navigation sauf que cette fois elle ne défile pas, elle est fixé en haut de la page -->
+<div style="background-color: #2d2d30;">
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">RC3</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html#intro"> Pourquoi? </a></li>
+					<li><a href="GoT.html"> Games of Thrones </a></li>
+					<li><a href="BB_.html"> Breaking Bad </a></li>
+					<li><a href="HoC.html"> House of Cards </a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+
+<!-- Entete -->
+<img src="img/testGoT.jpg" alt="GoT" id="GoT" style="width: 100%">
+
+<!-- Bloc pour aider l'utilisateur : comment utiliser le graphe et des résumés de chaque saison pour qu'il puisse s'en rappeler -->
+<ul class="nav nav-tabs nav-justified navbar-inverse">
+	<li style="background: teal;" class="active" id="b0"><a data-toggle="tab" href="#bloc0" style="color: black;">Accueil</a></li>
+	<li style="background: teal;" id="b1"><a data-toggle="tab" href="#bloc1" onclick="test2(1,'GoT')" id="1" style="color: black;">Saison 1</a></li>
+	<li style="background: teal;" id="b2"><a data-toggle="tab" href="#bloc2" onclick="test2(2,'GoT')" id="2" style="color: black;">Saison 2</a></li>
+	<li style="background: teal;" id="b3"><a data-toggle="tab" href="#bloc3" onclick="test2(3,'GoT')" id="3" style="color: black;">Saison 3</a></li>
+	<li style="background: teal;" id="b4"><a data-toggle="tab" href="#bloc4" onclick="test2(4,'GoT')" id="4" style="color: black;">Saison 4</a></li>
+	<li style="background: teal;" id="b5"><a data-toggle="tab" href="#bloc5" onclick="test2(5,'GoT')" id="5" style="color: black;">Saison 5</a></li>
+</ul>
+
+<!-- Explication du graphe et résumé -->
+<div class="tab-content">
+	<div id="bloc0" class="tab-pane fade in active text-center" style="background: #2F4F4F;">
+		<br>
+		<h3 style="color: #fff;"><br> Pour bien utiliser le graphe : </h3>
+			<p style="font-style: italic; color: #fff;"> Le graphe montre l'évolution des personnages et leur relation au cours de chaque épisode de la série.<br>
+			Appuyer sur play, pour démarrer et appuyer de nouveau pour faire pause.<br>
+			A tout moment, vous pouvez revenir au début et accélerer légérement l'évolution du graphe.<br>
+			Vous pouvez zoomer, dézoomer, agrandir en plein écran, déplacer les points en les attrapants avec la souris et déplacer le graphe tout entier en cliquant dans une zone vide.<br>
+			Vous pouvez dès à présent cliquer sur l'onglet de la saison qui vous interresse pour visualiser son graphe. <br>
+			Amusez vous bien tout en savourant le générique de votre série préféré ! </p>
+		<br>
+		<br>
+	</div>
+
+	<div id="bloc1" class="tab-pane fade" style="background: #2F4F4F;">
+		<br>
+		<div class="container text-center">
+			<h3 style="color: #fff;">Analyse de la saison 1<br><em> Petit résumé pour ceux qui ont oublier ce qu'il s'est passé dans cette saison : </em></h3>
+			<p style="color: #fff;"> Sur le continent de Westeros, le roi Robert Baratheon règne sur le Royaume des Sept Couronnes depuis qu'il a mené à la victoire la rébellion contre le roi fou, Aerys II Targaryen, dix-sept ans plus tôt. Son guide et principal conseiller, Jon Arryn, venant de décéder, il part dans le nord du royaume demander à son vieil ami Eddard Stark, seigneur suzerain du Nord et de la maison Stark, de remplacer leur regretté mentor au poste de « Main du roi ». Eddard, peu désireux de quitter ses terres, accepte à contre-cœur de partir à la cour avec ses deux filles Arya et Sansa, alors que Jon Snow, son fils bâtard, se prépare à intégrer la fameuse Garde de nuit : la confrérie protégeant le royaume depuis des siècles à son septentrion, de toute créature pouvant provenir d'au-delà du Mur protecteur. Mais, juste avant le départ pour le Sud, Bran, fils Stark, fait une découverte en escaladant une tour de Winterfell dont découleront des conséquences inattendues…
+
+			Dans le même temps, sur le continent Est, Viserys Targaryen, héritier « légitime » en exil des Sept Couronnes et fils d'Aerys, projette de marier sa jeune sœur Daenerys au khal Drogo, le chef d'une puissante horde de cavaliers nomades afin de s'en faire des alliés, en vue de la reconquête du royaume. Mais Viserys est presque aussi instable mentalement que son père.<em> - Résumé Wikipedia </em> </p>
+			<br>
+
+		</div>
+		<br>
+	</div>
+
+	<div id="bloc2" class="tab-pane fade" style="background: #2F4F4F;">
+		<br>
+		<div class="container text-center">
+			<br>
+			<h3 style="color: #fff;">Analyse de la saison 2<br><em> Petit résumé pour ceux qui ont oublier ce qu'il s'est passé dans cette saison : </em></h3>
+			<p style="color: #fff;"> Après la mort du roi Robert Baratheon et d'Eddard Stark, la légitimité du roi Joffrey est contestée par Stannis et Renly, frères de Robert, tandis que Sansa Stark est retenue comme otage à Port-Réal. Robb Stark poursuit sa rébellion pour venger son père et libérer sa sœur, bien que personne ne sache où se trouve Arya Stark. Lord Tywin Lannister, père de la Reine régente Cersei et grand-père du roi, qui la détient sans le savoir, continue de son côté à lutter à la fois contre les Baratheon et contre les Nordiens de Robb Stark. Chaque camp cherche de nouveaux alliés, et la guerre se prolonge, ignorant la menace d'au-delà du Mur. En effet, Lord Jeor Mormont continue de guider la Garde de nuit face aux Sauvageons, soutenu par Jon Snow, cherchant désespérément un moyen d'arrêter la marche de leur immense armée vers le sud.
+
+			De l'autre côté du Détroit, après avoir perdu les Dothraki, Daenerys Targaryen emmène ses dragons jusqu'à la cité de Qarth, où elle espère trouver un appui en vue de reconquérir les Sept-Couronnes.<em> - Résumé Wikipedia </em> </p>
+			<br>
+			<br>
+		</div>
+	</div>
+
+	<div id="bloc3" class="tab-pane fade" style="background: #2F4F4F;">
+		<br>
+		<div class="container text-center">
+			<h3 style="color: #fff;">Analyse de la saison 3<br><em> Petit résumé pour ceux qui ont oublier ce qu'il s'est passé dans cette saison : </em></h3>
+			<p style="color: #fff;"> Après les batailles de la saison précédente, le conflit s'apaise : moins de combats et plus de diplomatie. Alors que la guerre continue entre les forces du Nord sous la bannière de Robb Stark et celles du roi et de la famille Lannister, l'accent est mis sur les alliances entre les différentes factions qui luttent pour le pouvoir. Joffrey prépare son mariage avec Margaery Tyrell, Tywin Lannister organise des mariages prestigieux pour ses deux enfants disponibles et Robb doit offrir la main de son oncle pour espérer regagner le soutien de la maison Frey après avoir manqué à sa parole et rompu ses fiançailles avec l'une de ses filles. Le fameux mariage se termine dans un bain de sang - Walder Frey s'étant entre-temps rallié à la cause des Lannister.
+
+			Pendant ce temps, Stannis désespère à Peyredragon, car si Melisandre lui propose une magie puissante pour conquérir le Trône de fer, son fidèle Davos fait tout pour éviter un cruel sacrifice. Theon subit les pires tortures aux mains d'un personnage étrange qui refuse de lui révéler son nom. Brienne et Jaime Lannister continuent leur route vers Port-Réal dans une région dévastée, leur relation se renforçant au fil des péripéties.
+
+			En Essos, Daenerys réussit à libérer les esclaves des cités esclavagistes d'Astapor et de Yunkaï et à se constituer une puissante armée d'Immaculés. Elle réussit également à se faire de nouveaux alliés et décide de marcher vers la troisième et dernière cité esclavagiste de la Baie des Serfs : Meereen.<em> - Résumé Wikipedia </em> </p>
+			<br>
+		</div>
+	</div>
+
+	<div id="bloc4" class="tab-pane fade" style="background: #2F4F4F;">
+		<br>
+		<div class="container text-center">
+			<br>
+			<h3 style="color: #fff;">Analyse de la saison 4<br><em> Petit résumé pour ceux qui ont oublier ce qu'il s'est passé dans cette saison : </em></h3>
+			<p style="color: #fff;"> L'emprise des Lannister sur le Trône de fer est désormais totale, après le massacre des Noces Pourpres, qui a vu la mort de nombreux partisans du camp Stark et de fait brisé le soulèvement du Nord.
+
+			Alors que Stannis Baratheon poursuit la reconstruction de son armée à Peyredragon, un danger imminent arrive du Sud, en la personne d'Oberyn Martell. Ce dernier, arrivé à Port-Réal pour le mariage du roi Joffrey et de sa fiancée Margaery Tyrell, est habité par un désir de vengeance.
+
+			Au Nord, la Garde de nuit, affaiblie, semble dépassée par l’avancée de l’armée des Sauvageons de Mance Rayder, elle-même poursuivie par un ennemi plus redoutable : les Marcheurs blancs.
+
+			Daenerys réussit à prendre la ville de Meereen, à y abolir l'esclavage et à y imposer son autorité en tant que reine. Cependant, certains événements remettent en question la loyauté de certains de ses alliés.<em> - Résumé Wikipedia </em> </p>
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+
+	<div id="bloc5" class="tab-pane fade" style="background: #2F4F4F;">
+		<br>
+		<div class="container text-center">
+			<br>
+			<h3 style="color: #fff;">Analyse de la saison 5<br><em> Petit résumé pour ceux qui ont oublier ce qu'il s'est passé dans cette saison : </em></h3>
+			<p style="color: #fff;"> L'influence des Lannister est ébranlée : Tywin est mort. Cersei, dont l'autorité est contestée, y compris dans sa propre maison, doit faire face à l'influence croissante de sa belle-fille, Margaery Tyrell, sur son fils, le roi Tommen. De son côté, Jaime part à Dorne, pour protéger sa fille Myrcella, en danger depuis la mort d'Oberyn Martell. Quant à Tyrion, accompagné dans sa fuite par Varys, il part à la rencontre de Daenerys qui, elle, doit faire face à des mouvements de rébellion de la population de Meereen, qui ne l'accepte pas.
+
+			Parallèlement, les filles Stark doivent faire face à de nouveaux défis : Arya, à la recherche de Jaqen H'ghar à Braavos, recherche le moyen de se venger. Sansa, manipulée par Littlefinger, doit se marier avec Ramsay Bolton, nouveau maître de Winterfell, fils bâtard légitimé de Roose Bolton (meurtrier de Robb Stark).
+
+			Enfin Jon Snow, vainqueur des sauvageons, nouveau Lord Commandant, est confronté à Stannis Baratheon, qui souhaite faire de lui un Stark pour l'aider dans son projet de reconquête du Nord. Mais Jon est trahi et tué par ses frères d'armes, qui l'accusent de trahison.<em> - Résumé Wikipedia </em> </p>
+			<br>
+			<br>
+		</div>
+	</div>
+</div>
+
+<!-- Bloc contenant les boutons utile pour le graphe ainsi que la barre de temps lié au graphe -->
+<div style="background: #2F4F4F;">
+	<div class="container">
+		<div class="player text-center">
+			<button type="button" id="button_fbw" class="btn" onclick='buttonRewindPress()'>
+				<span class="glyphicon glyphicon-fast-backward"></span>
+			</button>
+
+			<button type="button" id="button_play" class="btn" value="0" onclick='buttonPlayPress()'>
+				<span class="glyphicon glyphicon-play"></span>
+			</button>
+
+			<button type="button" id="button_fw" class="btn" onclick='buttonForwardPress()'>
+				<span class="glyphicon glyphicon-forward"></span>
+			</button>
+
+			<button id="button" type="button" class="btn btn-primary" onclick="pleinEcran()">
+				<span class="glyphicon glyphicon-fullscreen"></span>
+			</button>
+
+			<div class="btn-group">
+				<button type="button" id="button_display_centralite" class="btn btn-default active" onclick='changeModeAffichage(mode_affichage.centralite, "button_display_centralite")'>
+					Centralité
+				</button>
+
+				<button type="button" id="button_display_anciennete" class="btn btn-default" onclick='changeModeAffichage(mode_affichage.anciennete, "button_display_anciennete")'>
+					Ancienneté
+				</button>
+			</div>
+
+			<div class="text-center">
+				<input id="ex1" data-provide="slider" data-slider-id='ex1Slider' style="width: 800px" type="text" data-slider-min="0" data-slider-max="1029" data-slider-step="1.5" data-slider-value="0" onchange="update()"/>
+			</div>
+
+			<div id="canvas" class="sidenav" style="background-color: #ffffff" >
+				<text id="text" style="font-weight: bold;"></text>
+				<svg class="jsnx" > </svg>
+			</div>
+			<script src="inc/draw_options.js"></script>
+			<script>
+				// Création d'un graphe puis lancement de celui ci
+				dessiner('GoT');
+			</script>
+		</div>
+	</div>
+	<br> <br>
+	<!-- Attention ! La musique se déclenche toute seule des qu'on clique sur le bouton play du graphe -->
+	<div class="text-center">
+		<audio id="musique" controls loop>
+			<source src="musique/GOT.mp3">
+		</audio>
+	</div>
+</div>
+
+<!-- Footer avec les couleurs de la page GoT, mais sinon c'est le meme que dans la page d'accueil -->
+<footer class="nb-footer-got">
+	<br>
+	<div class="text-center">
+		<a class="up-arrow" href="#" data-toggle="tooltip" title="Haut de page">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</a>
+	</div>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="about">
+					<div class="social-media">
+						<ul class="list-inline">
+							<li><a href="https://www.facebook.com/reseauxsociauxecologieethologie/?hc_ref=ARTHhIsjGITSBzf7tXCXAiSl9XokEhnj9P1n6tjXPQRm9qxafBQHC6nFQR46svJxlVA&fref=nf"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/FirstLink_bdx"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://plus.google.com/communities/117088638594032790105"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="footer-info-single">
+					<h2 class="title"> Gestion des Données </h2>
+					<ul class="list-unstyled">
+						<li><a href="https://nodejs.org/en/" title=""><i class="fa fa-angle-double-right"></i> Node.js </a></li>
+						<li><a href="https://github.com/anderspitman/graphml-js" title=""><i class="fa fa-angle-double-right"></i> Graphml.js </a></li>
+						<li><a href="https://developer.mozilla.org/fr/?utm_source=mozilla&utm_medium=firefox-tile&utm_campaign=default" title=""><i class="fa fa-angle-double-right"></i> Mozilla Developer </a></li>
+						<li><a href="https://jquery.com/" title=""><i class="fa fa-angle-double-right"></i> JQuery - Utilisé par tous</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="footer-info-single">
+					<h2 class="title"> Gestion du Graphe </h2>
+					<ul class="list-unstyled">
+						<li><a href="http://jsnetworkx.org/index.html" title=""><i class="fa fa-angle-double-right"></i> JsNetworkX </a></li>
+						<li><a href="https://github.com/fkling/JSNetworkX/wiki/Drawing-graphs" title=""><i class="fa fa-angle-double-right"></i> Autre lien JsNetworkX</a></li>
+						<li><a href="https://bl.ocks.org/mbostock/929623" title=""><i class="fa fa-angle-double-right"></i>Bl.ocks </a></li>
+						<li><a href="https://d3js.org/" title=""><i class="fa fa-angle-double-right"></i> d3.js </a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="footer-info-single">
+					<h2 class="title"> Gestion du Site </h2>
+					<ul class="list-unstyled">
+						<li><a href="https://getbootstrap.com/" title=""><i class="fa fa-angle-double-right"></i> BootStrap v3</a></li>
+						<li><a href="https://github.com/seiyria/bootstrap-slider" title=""><i class="fa fa-angle-double-right"></i> BootStrap-Slider </a></li>
+						<li><a href="https://github.com/sindresorhus/screenfull.js/" title=""><i class="fa fa-angle-double-right"></i> Screenfull.js </a></li>
+						<li><a href="http://fontawesome.io/" title=""><i class="fa fa-angle-double-right"></i> FontAwesome </a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="col-md-3 col-sm-6">
+				<div class="footer-info-single">
+					<h2 class="title">A propos de nous</h2>
+					<p> 3 étudiants - 3e année de Licence Informatique - l'Université Lyon 1 </p>
+					<p> Andriamaro Randy <br> Granjon Julien <br> Jassigneux Marie </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="text-center">
+					<p>Copyright © 2017 - LifProjet - RC3</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</footer>
+</html>
