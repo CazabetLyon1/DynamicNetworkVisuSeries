@@ -1,0 +1,1547 @@
+{
+	"nodes": [
+		{
+			"_id": "n0",
+			"_attributes": {
+				"label": "ABQ Dectective #1"
+			}
+		},
+		{
+			"_id": "n1",
+			"_attributes": {
+				"label": "ABQ Dectective #2"
+			}
+		},
+		{
+			"_id": "n2",
+			"_attributes": {
+				"label": "George Merkert"
+			}
+		},
+		{
+			"_id": "n3",
+			"_attributes": {
+				"label": "Hank Schrader"
+			}
+		},
+		{
+			"_id": "n4",
+			"_attributes": {
+				"label": "Union Rep"
+			}
+		},
+		{
+			"_id": "n5",
+			"_attributes": {
+				"label": "APD Officer"
+			}
+		},
+		{
+			"_id": "n6",
+			"_attributes": {
+				"label": "Walter White"
+			}
+		},
+		{
+			"_id": "n7",
+			"_attributes": {
+				"label": "Adam Pinkman"
+			}
+		},
+		{
+			"_id": "n8",
+			"_attributes": {
+				"label": "Jake Pinkman"
+			}
+		},
+		{
+			"_id": "n9",
+			"_attributes": {
+				"label": "Jesse Pinkman"
+			}
+		},
+		{
+			"_id": "n10",
+			"_attributes": {
+				"label": "Mr. Gardiner"
+			}
+		},
+		{
+			"_id": "n11",
+			"_attributes": {
+				"label": "Mrs. Pinkman"
+			}
+		},
+		{
+			"_id": "n12",
+			"_attributes": {
+				"label": "Saul Goodman"
+			}
+		},
+		{
+			"_id": "n13",
+			"_attributes": {
+				"label": "Addict"
+			}
+		},
+		{
+			"_id": "n14",
+			"_attributes": {
+				"label": "Tattooed Biker"
+			}
+		},
+		{
+			"_id": "n15",
+			"_attributes": {
+				"label": "Agent Buddy"
+			}
+		},
+		{
+			"_id": "n16",
+			"_attributes": {
+				"label": "Andrea Cantillo"
+			}
+		},
+		{
+			"_id": "n17",
+			"_attributes": {
+				"label": "Brock Cantillo"
+			}
+		},
+		{
+			"_id": "n18",
+			"_attributes": {
+				"label": "Group Leader"
+			}
+		},
+		{
+			"_id": "n19",
+			"_attributes": {
+				"label": "Mrs. Cantillo"
+			}
+		},
+		{
+			"_id": "n20",
+			"_attributes": {
+				"label": "Skinny Pete"
+			}
+		},
+		{
+			"_id": "n21",
+			"_attributes": {
+				"label": "Andrew Coffman"
+			}
+		},
+		{
+			"_id": "n22",
+			"_attributes": {
+				"label": "Antonio"
+			}
+		},
+		{
+			"_id": "n23",
+			"_attributes": {
+				"label": "Arms Dealer"
+			}
+		},
+		{
+			"_id": "n24",
+			"_attributes": {
+				"label": "Leonel Salamanca"
+			}
+		},
+		{
+			"_id": "n25",
+			"_attributes": {
+				"label": "Marco Salamanca"
+			}
+		},
+		{
+			"_id": "n26",
+			"_attributes": {
+				"label": "Arroyo Realty Manager"
+			}
+		},
+		{
+			"_id": "n27",
+			"_attributes": {
+				"label": "Badger"
+			}
+		},
+		{
+			"_id": "n28",
+			"_attributes": {
+				"label": "Christian \"Combo\" Ortega"
+			}
+		},
+		{
+			"_id": "n29",
+			"_attributes": {
+				"label": "Clovis"
+			}
+		},
+		{
+			"_id": "n30",
+			"_attributes": {
+				"label": "Getz"
+			}
+		},
+		{
+			"_id": "n31",
+			"_attributes": {
+				"label": "Barry"
+			}
+		},
+		{
+			"_id": "n32",
+			"_attributes": {
+				"label": "Carmen Molina"
+			}
+		},
+		{
+			"_id": "n33",
+			"_attributes": {
+				"label": "Ben"
+			}
+		},
+		{
+			"_id": "n34",
+			"_attributes": {
+				"label": "Beneke Employee #1"
+			}
+		},
+		{
+			"_id": "n35",
+			"_attributes": {
+				"label": "Ted Beneke"
+			}
+		},
+		{
+			"_id": "n36",
+			"_attributes": {
+				"label": "Beneke Employee #2"
+			}
+		},
+		{
+			"_id": "n37",
+			"_attributes": {
+				"label": "Skyler White"
+			}
+		},
+		{
+			"_id": "n38",
+			"_attributes": {
+				"label": "Beto"
+			}
+		},
+		{
+			"_id": "n39",
+			"_attributes": {
+				"label": "Tortuga"
+			}
+		},
+		{
+			"_id": "n40",
+			"_attributes": {
+				"label": "Big Biker"
+			}
+		},
+		{
+			"_id": "n41",
+			"_attributes": {
+				"label": "Billy"
+			}
+		},
+		{
+			"_id": "n42",
+			"_attributes": {
+				"label": "Jimmy"
+			}
+		},
+		{
+			"_id": "n43",
+			"_attributes": {
+				"label": "Bob"
+			}
+		},
+		{
+			"_id": "n44",
+			"_attributes": {
+				"label": "Bogdan Wolynetz"
+			}
+		},
+		{
+			"_id": "n45",
+			"_attributes": {
+				"label": "Boy #1"
+			}
+		},
+		{
+			"_id": "n46",
+			"_attributes": {
+				"label": "Cara"
+			}
+		},
+		{
+			"_id": "n47",
+			"_attributes": {
+				"label": "Concerned Parent #1"
+			}
+		},
+		{
+			"_id": "n48",
+			"_attributes": {
+				"label": "Concerned Parent #2"
+			}
+		},
+		{
+			"_id": "n49",
+			"_attributes": {
+				"label": "Marie Schrader"
+			}
+		},
+		{
+			"_id": "n50",
+			"_attributes": {
+				"label": "Sad Faced Girl"
+			}
+		},
+		{
+			"_id": "n51",
+			"_attributes": {
+				"label": "Walter White Jr."
+			}
+		},
+		{
+			"_id": "n52",
+			"_attributes": {
+				"label": "Wide Eyed Boy"
+			}
+		},
+		{
+			"_id": "n53",
+			"_attributes": {
+				"label": "Chad"
+			}
+		},
+		{
+			"_id": "n54",
+			"_attributes": {
+				"label": "Chad's girlfriend"
+			}
+		},
+		{
+			"_id": "n55",
+			"_attributes": {
+				"label": "Clinic's Clerk"
+			}
+		},
+		{
+			"_id": "n56",
+			"_attributes": {
+				"label": "Police Officer #1"
+			}
+		},
+		{
+			"_id": "n57",
+			"_attributes": {
+				"label": "Cynthia"
+			}
+		},
+		{
+			"_id": "n58",
+			"_attributes": {
+				"label": "Gustavo Fring"
+			}
+		},
+		{
+			"_id": "n59",
+			"_attributes": {
+				"label": "DEA agent #1"
+			}
+		},
+		{
+			"_id": "n60",
+			"_attributes": {
+				"label": "DEA agent Vanco"
+			}
+		},
+		{
+			"_id": "n61",
+			"_attributes": {
+				"label": "Federale #1"
+			}
+		},
+		{
+			"_id": "n62",
+			"_attributes": {
+				"label": "SAC Ramey"
+			}
+		},
+		{
+			"_id": "n63",
+			"_attributes": {
+				"label": "Danny's Auto Service Employee #1"
+			}
+		},
+		{
+			"_id": "n64",
+			"_attributes": {
+				"label": "Ken"
+			}
+		},
+		{
+			"_id": "n65",
+			"_attributes": {
+				"label": "Doctor #1"
+			}
+		},
+		{
+			"_id": "n66",
+			"_attributes": {
+				"label": "Hospital Administrator"
+			}
+		},
+		{
+			"_id": "n67",
+			"_attributes": {
+				"label": "Doctor ambulance"
+			}
+		},
+		{
+			"_id": "n68",
+			"_attributes": {
+				"label": "Doctor hospital"
+			}
+		},
+		{
+			"_id": "n69",
+			"_attributes": {
+				"label": "Domingo Molina"
+			}
+		},
+		{
+			"_id": "n70",
+			"_attributes": {
+				"label": "Emilio Koyama"
+			}
+		},
+		{
+			"_id": "n71",
+			"_attributes": {
+				"label": "Donald Margolis"
+			}
+		},
+		{
+			"_id": "n72",
+			"_attributes": {
+				"label": "Jane Margolis"
+			}
+		},
+		{
+			"_id": "n73",
+			"_attributes": {
+				"label": "Nurse #2"
+			}
+		},
+		{
+			"_id": "n74",
+			"_attributes": {
+				"label": "O.M.I. Officer"
+			}
+		},
+		{
+			"_id": "n75",
+			"_attributes": {
+				"label": "Police agent"
+			}
+		},
+		{
+			"_id": "n76",
+			"_attributes": {
+				"label": "Stew"
+			}
+		},
+		{
+			"_id": "n77",
+			"_attributes": {
+				"label": "Waitress #2"
+			}
+		},
+		{
+			"_id": "n78",
+			"_attributes": {
+				"label": "Dr. Chavez"
+			}
+		},
+		{
+			"_id": "n79",
+			"_attributes": {
+				"label": "Dr. Delcavoli"
+			}
+		},
+		{
+			"_id": "n80",
+			"_attributes": {
+				"label": "Dr. Victor Bravenec"
+			}
+		},
+		{
+			"_id": "n81",
+			"_attributes": {
+				"label": "Dr. Soper"
+			}
+		},
+		{
+			"_id": "n82",
+			"_attributes": {
+				"label": "Duane Chow"
+			}
+		},
+		{
+			"_id": "n83",
+			"_attributes": {
+				"label": "Mike Ehrmantraut"
+			}
+		},
+		{
+			"_id": "n84",
+			"_attributes": {
+				"label": "EMT"
+			}
+		},
+		{
+			"_id": "n85",
+			"_attributes": {
+				"label": "ER Doctor #1"
+			}
+		},
+		{
+			"_id": "n86",
+			"_attributes": {
+				"label": "ER Doctor #2"
+			}
+		},
+		{
+			"_id": "n87",
+			"_attributes": {
+				"label": "Elliott Schwartz"
+			}
+		},
+		{
+			"_id": "n88",
+			"_attributes": {
+				"label": "Gretchen Schwartz"
+			}
+		},
+		{
+			"_id": "n89",
+			"_attributes": {
+				"label": "Scientist"
+			}
+		},
+		{
+			"_id": "n90",
+			"_attributes": {
+				"label": "Employee #1"
+			}
+		},
+		{
+			"_id": "n91",
+			"_attributes": {
+				"label": "Farley"
+			}
+		},
+		{
+			"_id": "n92",
+			"_attributes": {
+				"label": "Francesca"
+			}
+		},
+		{
+			"_id": "n93",
+			"_attributes": {
+				"label": "Friendly Agent"
+			}
+		},
+		{
+			"_id": "n94",
+			"_attributes": {
+				"label": "Steven Gomez"
+			}
+		},
+		{
+			"_id": "n95",
+			"_attributes": {
+				"label": "Gale Boetticher"
+			}
+		},
+		{
+			"_id": "n96",
+			"_attributes": {
+				"label": "Paul Canterna"
+			}
+		},
+		{
+			"_id": "n97",
+			"_attributes": {
+				"label": "Gonzo"
+			}
+		},
+		{
+			"_id": "n98",
+			"_attributes": {
+				"label": "Tuco Salamanca"
+			}
+		},
+		{
+			"_id": "n99",
+			"_attributes": {
+				"label": "Juan Bolsa"
+			}
+		},
+		{
+			"_id": "n100",
+			"_attributes": {
+				"label": "Janice"
+			}
+		},
+		{
+			"_id": "n101",
+			"_attributes": {
+				"label": "Mrs Ortega"
+			}
+		},
+		{
+			"_id": "n102",
+			"_attributes": {
+				"label": "OPR Official #1"
+			}
+		},
+		{
+			"_id": "n103",
+			"_attributes": {
+				"label": "Old Joe"
+			}
+		},
+		{
+			"_id": "n104",
+			"_attributes": {
+				"label": "Pa Kettie"
+			}
+		},
+		{
+			"_id": "n105",
+			"_attributes": {
+				"label": "Physical Therapist"
+			}
+		},
+		{
+			"_id": "n106",
+			"_attributes": {
+				"label": "Ramey"
+			}
+		},
+		{
+			"_id": "n107",
+			"_attributes": {
+				"label": "Ricky"
+			}
+		},
+		{
+			"_id": "n108",
+			"_attributes": {
+				"label": "Russell"
+			}
+		},
+		{
+			"_id": "n109",
+			"_attributes": {
+				"label": "Tim Roberts"
+			}
+		},
+		{
+			"_id": "n110",
+			"_attributes": {
+				"label": "Tio's nurse"
+			}
+		},
+		{
+			"_id": "n111",
+			"_attributes": {
+				"label": "Wendy"
+			}
+		},
+		{
+			"_id": "n112",
+			"_attributes": {
+				"label": "Hector Salamanca"
+			}
+		},
+		{
+			"_id": "n113",
+			"_attributes": {
+				"label": "Henry Tyree"
+			}
+		},
+		{
+			"_id": "n114",
+			"_attributes": {
+				"label": "Paul Tyree"
+			}
+		},
+		{
+			"_id": "n115",
+			"_attributes": {
+				"label": "Hospital Medic"
+			}
+		},
+		{
+			"_id": "n116",
+			"_attributes": {
+				"label": "Hot Chick Cop"
+			}
+		},
+		{
+			"_id": "n117",
+			"_attributes": {
+				"label": "Schlubby Guy #2"
+			}
+		},
+		{
+			"_id": "n118",
+			"_attributes": {
+				"label": "Jeffrey"
+			}
+		},
+		{
+			"_id": "n119",
+			"_attributes": {
+				"label": "Mail Lady #1"
+			}
+		},
+		{
+			"_id": "n120",
+			"_attributes": {
+				"label": "Prospective Buyer #2"
+			}
+		},
+		{
+			"_id": "n121",
+			"_attributes": {
+				"label": "Sara Tyree"
+			}
+		},
+		{
+			"_id": "n122",
+			"_attributes": {
+				"label": "Spooge"
+			}
+		},
+		{
+			"_id": "n123",
+			"_attributes": {
+				"label": "Spooge's Lady"
+			}
+		},
+		{
+			"_id": "n124",
+			"_attributes": {
+				"label": "Tomás Cantillo"
+			}
+		},
+		{
+			"_id": "n125",
+			"_attributes": {
+				"label": "Victor"
+			}
+		},
+		{
+			"_id": "n126",
+			"_attributes": {
+				"label": "Waitress #3"
+			}
+		},
+		{
+			"_id": "n127",
+			"_attributes": {
+				"label": "Wino"
+			}
+		},
+		{
+			"_id": "n128",
+			"_attributes": {
+				"label": "Young Boy #1"
+			}
+		},
+		{
+			"_id": "n129",
+			"_attributes": {
+				"label": "Jewelry Store Owner"
+			}
+		},
+		{
+			"_id": "n130",
+			"_attributes": {
+				"label": "Jock"
+			}
+		},
+		{
+			"_id": "n131",
+			"_attributes": {
+				"label": "Jock's Friend #1"
+			}
+		},
+		{
+			"_id": "n132",
+			"_attributes": {
+				"label": "Jodi Nichols"
+			}
+		},
+		{
+			"_id": "n133",
+			"_attributes": {
+				"label": "Prospective Buyer #1"
+			}
+		},
+		{
+			"_id": "n134",
+			"_attributes": {
+				"label": "Kaylee Ehrmantraut"
+			}
+		},
+		{
+			"_id": "n135",
+			"_attributes": {
+				"label": "Mesa Credit Union employee #1"
+			}
+		},
+		{
+			"_id": "n136",
+			"_attributes": {
+				"label": "Lead Doctor"
+			}
+		},
+		{
+			"_id": "n137",
+			"_attributes": {
+				"label": "Local Correspondant"
+			}
+		},
+		{
+			"_id": "n138",
+			"_attributes": {
+				"label": "Louis Corbett"
+			}
+		},
+		{
+			"_id": "n139",
+			"_attributes": {
+				"label": "Soren"
+			}
+		},
+		{
+			"_id": "n140",
+			"_attributes": {
+				"label": "Margaret"
+			}
+		},
+		{
+			"_id": "n141",
+			"_attributes": {
+				"label": "Neighborhood Kid #1"
+			}
+		},
+		{
+			"_id": "n142",
+			"_attributes": {
+				"label": "Medical Technician"
+			}
+		},
+		{
+			"_id": "n143",
+			"_attributes": {
+				"label": "Stacey Ehrmantraut"
+			}
+		},
+		{
+			"_id": "n144",
+			"_attributes": {
+				"label": "Mrs. Pope"
+			}
+		},
+		{
+			"_id": "n145",
+			"_attributes": {
+				"label": "No-Doze"
+			}
+		},
+		{
+			"_id": "n146",
+			"_attributes": {
+				"label": "Nurse"
+			}
+		},
+		{
+			"_id": "n147",
+			"_attributes": {
+				"label": "Ob-Gyn"
+			}
+		},
+		{
+			"_id": "n148",
+			"_attributes": {
+				"label": "Ob-Gyn #2"
+			}
+		},
+		{
+			"_id": "n149",
+			"_attributes": {
+				"label": "Off-Duty Police Officer"
+			}
+		},
+		{
+			"_id": "n150",
+			"_attributes": {
+				"label": "Officer Cavanaugh"
+			}
+		},
+		{
+			"_id": "n151",
+			"_attributes": {
+				"label": "Officer Saxton"
+			}
+		},
+		{
+			"_id": "n152",
+			"_attributes": {
+				"label": "Saxton's Partner"
+			}
+		},
+		{
+			"_id": "n153",
+			"_attributes": {
+				"label": "Pamela"
+			}
+		},
+		{
+			"_id": "n154",
+			"_attributes": {
+				"label": "Pollos Manager"
+			}
+		},
+		{
+			"_id": "n155",
+			"_attributes": {
+				"label": "Prisoner #1"
+			}
+		},
+		{
+			"_id": "n156",
+			"_attributes": {
+				"label": "Realtor"
+			}
+		},
+		{
+			"_id": "n157",
+			"_attributes": {
+				"label": "Receptionist #1"
+			}
+		},
+		{
+			"_id": "n158",
+			"_attributes": {
+				"label": "Restaurant Employee #1"
+			}
+		},
+		{
+			"_id": "n159",
+			"_attributes": {
+				"label": "Schlubby Guy #1"
+			}
+		},
+		{
+			"_id": "n160",
+			"_attributes": {
+				"label": "Stan"
+			}
+		},
+		{
+			"_id": "n161",
+			"_attributes": {
+				"label": "Waitress #1"
+			}
+		},
+		{
+			"_id": "n162",
+			"_attributes": {
+				"label": "Student #1"
+			}
+		},
+		{
+			"_id": "n163",
+			"_attributes": {
+				"label": "Technician"
+			}
+		},
+		{
+			"_id": "n164",
+			"_attributes": {
+				"label": "Thug Buddy"
+			}
+		},
+		{
+			"_id": "n165",
+			"_attributes": {
+				"label": "Tweaky Dude"
+			}
+		},
+		{
+			"_id": "n166",
+			"_attributes": {
+				"label": "Urinal Guy"
+			}
+		}
+	],
+	"edges": [
+		{
+			"_attributes": {
+				"weight": 8.69634e-20
+			},
+			"_source": "n5",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 8.58376e-24
+			},
+			"_source": "n27",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 3.25758e-54
+			},
+			"_source": "n31",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 2.21509e-83
+			},
+			"_source": "n33",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 2.1214e-68
+			},
+			"_source": "n41",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.15003e-43
+			},
+			"_source": "n43",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 7.46954e-87
+			},
+			"_source": "n44",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 8.74474e-28
+			},
+			"_source": "n32",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 3.51681e-54
+			},
+			"_source": "n28",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 5.53613e-60
+			},
+			"_source": "n55",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 6.43716e-23
+			},
+			"_source": "n29",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 4.15883e-87
+			},
+			"_source": "n67",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 4.80296e-87
+			},
+			"_source": "n68",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 3.88984e-78
+			},
+			"_source": "n69",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 7.0343e-37
+			},
+			"_source": "n71",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 3.54568e-63
+			},
+			"_source": "n78",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 8.46054e-36
+			},
+			"_source": "n79",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 6.68199e-64
+			},
+			"_source": "n81",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.01533e-35
+			},
+			"_source": "n80",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 0.154082
+			},
+			"_source": "n82",
+			"_target": "n83"
+		},
+		{
+			"_attributes": {
+				"weight": 3.6986e-56
+			},
+			"_source": "n87",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 4.46408e-85
+			},
+			"_source": "n70",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 2.20113e-75
+			},
+			"_source": "n91",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 0.0225692
+			},
+			"_source": "n95",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.51992e-19
+			},
+			"_source": "n2",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 4.11066e-50
+			},
+			"_source": "n30",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 3.47183e-71
+			},
+			"_source": "n97",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 2.54963e-55
+			},
+			"_source": "n88",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 0.0337553
+			},
+			"_source": "n58",
+			"_target": "n83"
+		},
+		{
+			"_attributes": {
+				"weight": 0.00572137
+			},
+			"_source": "n58",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 9.3388e-27
+			},
+			"_source": "n3",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.08478e-38
+			},
+			"_source": "n72",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 0.000777888
+			},
+			"_source": "n9",
+			"_target": "n83"
+		},
+		{
+			"_attributes": {
+				"weight": 5.84465e-19
+			},
+			"_source": "n9",
+			"_target": "n125"
+		},
+		{
+			"_attributes": {
+				"weight": 0.497375
+			},
+			"_source": "n9",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 2.05706e-68
+			},
+			"_source": "n42",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.5009e-85
+			},
+			"_source": "n130",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.27694e-85
+			},
+			"_source": "n131",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.40501e-70
+			},
+			"_source": "n132",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 0.100065
+			},
+			"_source": "n134",
+			"_target": "n83"
+		},
+		{
+			"_attributes": {
+				"weight": 5.15294e-78
+			},
+			"_source": "n64",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.94181e-61
+			},
+			"_source": "n138",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 9.97595e-29
+			},
+			"_source": "n140",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.89897e-16
+			},
+			"_source": "n49",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 7.25849e-75
+			},
+			"_source": "n142",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 0.352344
+			},
+			"_source": "n83",
+			"_target": "n12"
+		},
+		{
+			"_attributes": {
+				"weight": 0.0718602
+			},
+			"_source": "n83",
+			"_target": "n143"
+		},
+		{
+			"_attributes": {
+				"weight": 0.0197282
+			},
+			"_source": "n83",
+			"_target": "n125"
+		},
+		{
+			"_attributes": {
+				"weight": 0.537579
+			},
+			"_source": "n83",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.82147e-73
+			},
+			"_source": "n144",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 4.76833e-70
+			},
+			"_source": "n145",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 3.46234e-40
+			},
+			"_source": "n146",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 4.73018e-36
+			},
+			"_source": "n73",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 9.95333e-82
+			},
+			"_source": "n147",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 8.42374e-42
+			},
+			"_source": "n148",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 8.73129e-32
+			},
+			"_source": "n150",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 7.34546e-30
+			},
+			"_source": "n151",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.19039e-22
+			},
+			"_source": "n103",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.59009e-40
+			},
+			"_source": "n154",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 6.0247e-25
+			},
+			"_source": "n156",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 7.19599e-42
+			},
+			"_source": "n158",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 0.322196
+			},
+			"_source": "n12",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 5.52776e-30
+			},
+			"_source": "n152",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.42045e-75
+			},
+			"_source": "n89",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.62398e-55
+			},
+			"_source": "n20",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 0.00480243
+			},
+			"_source": "n37",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 0.0020116
+			},
+			"_source": "n160",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 6.28189e-18
+			},
+			"_source": "n94",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.06597e-73
+			},
+			"_source": "n162",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.59887e-49
+			},
+			"_source": "n163",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 9.74411e-30
+			},
+			"_source": "n35",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.44142e-64
+			},
+			"_source": "n98",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 5.92594e-43
+			},
+			"_source": "n165",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 1.29387e-49
+			},
+			"_source": "n166",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 0.507899
+			},
+			"_source": "n125",
+			"_target": "n6"
+		},
+		{
+			"_attributes": {
+				"weight": 0.000461757
+			},
+			"_source": "n6",
+			"_target": "n51"
+		},
+		{
+			"_attributes": {
+				"weight": 7.20347e-34
+			},
+			"_source": "n6",
+			"_target": "n52"
+		}
+	]
+}
